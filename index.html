@@ -1,233 +1,357 @@
 <!doctype html>
-<html lang="en" data-light-theme="light" data-dark-theme="dark">
+<html lang="en">
   <head>
     <base href="./" />
-    <meta property="og:site_name" content="Notified: Notification History" />
-    <meta property="og:title" content="Notified: Notification History" />
-    <meta name="twitter:title" content="Notified: Notification History" />
-    <meta property="og:url" content="https://christiansko.github.io/Notified-Web/" />
-    <meta name="twitter:domain" content="christiansko.github.io" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:dnt" content="on" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Developer" />
-    <meta name="generator" content="Ignite v0.6.0" />
     <title>Notified: Notification History</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.min.css" rel="stylesheet" />
-    <link href="css/ignite-core.min.css" rel="stylesheet" />
+    <meta name="description" content="Clear your notifications. Keep them anyway. Notified keeps a copy of every notification from the apps you choose, sorted and searchable, on your iPhone." />
+    <meta name="author" content="Christian Skorobogatow" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:site_name" content="Notified: Notification History" />
+    <meta property="og:title" content="Notified: Notification History" />
+    <meta property="og:description" content="Clear your notifications. Keep them anyway. Find any alert, any time." />
+    <meta property="og:url" content="https://christiansko.github.io/Notified-Web/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://christiansko.github.io/Notified-Web/images/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notified: Notification History" />
+    <meta name="twitter:description" content="Clear your notifications. Keep them anyway. Find any alert, any time." />
+    <meta name="twitter:image" content="https://christiansko.github.io/Notified-Web/images/og-image.png" />
+    <meta name="twitter:dnt" content="on" />
+    <meta name="apple-itunes-app" content="app-id=6820894292" />
     <link href="https://christiansko.github.io/Notified-Web/" rel="canonical" />
     <link href="images/favicon.png" rel="icon" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <style>
-:root {
-    --primary-color: #2563eb;
-    --primary-rgb: 37, 99, 235;
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color-scheme: light dark;
-}
-</style>
-    <meta name="apple-itunes-app" content="app-id=6820894292" />
+    <link href="images/app-icon-512.png" rel="apple-touch-icon" />
+    <link rel="preload" as="image" href="images/screenshots/notifications-light.webp" />
+    <link href="css/landing.css" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Notified: Notification History",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "Clear your notifications. Keep them anyway. Notified keeps a copy of every notification from the apps you choose, sorted and searchable, on your iPhone.",
+      "url": "https://christiansko.github.io/Notified-Web/",
+      "installUrl": "https://apps.apple.com/app/id6820894292",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
   </head>
-  <body data-site-classes="site-shell">
-    <header>
-      <nav class="site-header navbar navbar-expand-md">
-        <div class="container flex-wrap flex-lg-nowrap">
-          <div class="me-2 me-md-auto">
-            <a href="./" class="brand-link d-inline-flex align-items-center navbar-brand"><span class="brand-name">Notified: Notification History</span></a>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="top">
+      <div class="nav-inner">
+        <a href="./" class="nav-brand" aria-label="Notified home">
+          <img src="images/app-icon-512.png" alt="" width="28" height="28" />
+          <span>Notified</span>
+        </a>
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a href="https://apps.apple.com/app/id6820894292" class="nav-cta">Get Notified</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero scene scene-dark">
+        <div class="glow glow-hero" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <img src="images/app-icon-512.png" alt="" class="hero-icon rise" width="96" height="96" />
+          <h1 class="display rise-blur">
+            Clear your notifications.<br />
+            <span class="w">Keep them anyway.</span>
+          </h1>
+          <p class="lede rise d1">
+            Notified keeps a copy of every notification from the apps you choose.
+            Search finds any of them in seconds.
+          </p>
+          <div class="rise d2">
+            <a href="https://apps.apple.com/app/id6820894292" class="badge-link">
+              <img src="images/app-store-download-white.svg" alt="Download on the App Store" class="badge" />
+            </a>
           </div>
-          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
-              <li class="nav-item"><a href="#screenshots" class="nav-link text-nowrap">Screenshots</a></li>
-              <li class="nav-item"><a href="#highlights" class="nav-link text-nowrap">Highlights</a></li>
-              <li class="nav-item"><a href="#features" class="nav-link text-nowrap">Features</a></li>
-              <li class="nav-item"><a href="#faq" class="nav-link text-nowrap">FAQ</a></li>
-              <li class="nav-item"><a href="https://apps.apple.com/app/id6820894292" class="text-nowrap btn btn-sm btn-primary">Download</a></li>
+        </div>
+        <div class="hero-stage rise-scale d2">
+          <div class="glow glow-stage" aria-hidden="true"></div>
+          <figure class="phone phone-lg phone-hero-main">
+            <div class="phone-screen">
+              <img src="images/screenshots/notifications-light.webp" alt="Notified showing a Today summary and saved notifications from Messages and Chase" width="640" height="1392" fetchpriority="high" />
+            </div>
+          </figure>
+          <figure class="phone phone-md phone-hero-side">
+            <div class="phone-screen">
+              <img src="images/screenshots/insights-light.webp" alt="Notified Insights listing notifications per app over seven days" width="640" height="1392" loading="lazy" />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Scene: cleared is not gone -->
+      <section class="scene scene-light">
+        <div class="scene-copy reveal">
+          <h2 class="display">Cleared doesn't <span class="w">mean gone</span>.</h2>
+          <p class="lede">Swiped away by accident or gone on unlock? It's still here, in a list that looks like your Lock Screen.</p>
+        </div>
+        <div class="scene-device reveal parallax" data-parallax="1">
+          <figure class="phone phone-xl">
+            <div class="phone-screen">
+              <img src="images/screenshots/notifications-dark.webp" alt="Notified in dark mode with saved notifications grouped by app" width="640" height="1392" loading="lazy" />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Scene: see what matters first -->
+      <section class="scene scene-dark">
+        <div class="glow glow-mid" aria-hidden="true"></div>
+        <div class="scene-copy reveal">
+          <h2 class="display">See what <span class="w">matters first</span>.</h2>
+          <p class="lede">Codes, people and updates, kept apart from promotions. Sorted on your iPhone, not on a server.</p>
+        </div>
+        <div class="scene-device reveal parallax" data-parallax="1">
+          <figure class="phone phone-xl">
+            <div class="phone-screen placeholder" role="img" aria-label="Placeholder for a screenshot of the Codes, People, Updates and Promotions filters">
+              <span class="ph-chip">Placeholder</span>
+              <span class="ph-text">Filters:<br />Codes · People · Updates · Promotions</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Big statement -->
+      <section class="statement scene-dark">
+        <div class="glow glow-statement" aria-hidden="true"></div>
+        <h2 class="display display-xl reveal">Never lose the one <span class="w">that matters</span>.</h2>
+      </section>
+
+      <!-- Privacy proof -->
+      <section class="proof scene-dark">
+        <div class="proof-inner reveal">
+          <div class="eyebrow">Private by design</div>
+          <blockquote class="quote">
+            Notifications are saved and sorted on your iPhone. Nothing is sent to a server to be read or analyzed.
+            <span class="w">Summaries run on‑device with Apple Intelligence.</span>
+          </blockquote>
+          <ul class="stats" aria-label="Privacy facts">
+            <li><strong>On your iPhone</strong><span>nothing leaves it</span></li>
+            <li><strong>Apple Intelligence</strong><span>on‑device summaries</span></li>
+            <li><strong>Face ID</strong><span>optional lock</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="features scene-paper">
+        <div class="features-inner">
+          <div class="section-head reveal">
+            <div class="eyebrow">Everything it does</div>
+            <h2 class="display display-md">Built to <span class="w">find it again</span>.</h2>
+          </div>
+          <div class="features-layout">
+            <div class="features-preview" id="feature-preview" aria-live="polite">
+              <div class="feature-panel is-active" data-feature="list">
+                <figure class="phone phone-md">
+                  <div class="phone-screen">
+                    <img src="images/screenshots/notifications-light.webp" alt="Saved notifications in a Lock Screen-style list" width="640" height="1392" loading="lazy" />
+                  </div>
+                </figure>
+                <p class="feature-note">Every saved notification, in the layout you already know.</p>
+              </div>
+              <div class="feature-panel" data-feature="search" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen placeholder" role="img" aria-label="Placeholder for a screenshot of search">
+                    <span class="ph-chip">Placeholder</span><span class="ph-text">Search</span>
+                  </div>
+                </figure>
+                <p class="feature-note">Any notification, in seconds.</p>
+              </div>
+              <div class="feature-panel" data-feature="filters" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen placeholder" role="img" aria-label="Placeholder for a screenshot of filters">
+                    <span class="ph-chip">Placeholder</span><span class="ph-text">Filters</span>
+                  </div>
+                </figure>
+                <p class="feature-note">Codes, People, Updates, Promotions and Other. Each one a tap away.</p>
+              </div>
+              <div class="feature-panel" data-feature="codes" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen placeholder" role="img" aria-label="Placeholder for a screenshot of copying a code">
+                    <span class="ph-chip">Placeholder</span><span class="ph-text">Copy code</span>
+                  </div>
+                </figure>
+                <p class="feature-note">Swipe or long‑press to copy a sign‑in code. One tap.</p>
+              </div>
+              <div class="feature-panel" data-feature="original" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen placeholder" role="img" aria-label="Placeholder for a screenshot of an original message kept after an edit">
+                    <span class="ph-chip">Placeholder</span><span class="ph-text">Original kept</span>
+                  </div>
+                </figure>
+                <p class="feature-note">Edited or unsent? The notification you got is still here.</p>
+              </div>
+              <div class="feature-panel" data-feature="summary" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen">
+                    <img src="images/screenshots/notifications-dark.webp" alt="A Today summary card above the saved notifications" width="640" height="1392" loading="lazy" />
+                  </div>
+                </figure>
+                <p class="feature-note">Come back after a while and catch up in one look.</p>
+              </div>
+              <div class="feature-panel" data-feature="insights" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen">
+                    <img src="images/screenshots/insights-light.webp" alt="Insights showing notifications per app" width="640" height="1392" loading="lazy" />
+                  </div>
+                </figure>
+                <p class="feature-note">See which apps send the most, so you know where the noise comes from.</p>
+              </div>
+              <div class="feature-panel" data-feature="yours" hidden>
+                <figure class="phone phone-md">
+                  <div class="phone-screen placeholder" role="img" aria-label="Placeholder for a screenshot of accent colors and backgrounds">
+                    <span class="ph-chip">Placeholder</span><span class="ph-text">Accent &amp; backgrounds</span>
+                  </div>
+                </figure>
+                <p class="feature-note">Accent colors, backgrounds, codes protection and a Face ID lock.</p>
+              </div>
+            </div>
+            <ul class="features-list" id="feature-list">
+              <li><button type="button" data-feature="list" aria-pressed="true">Lock Screen‑style list</button></li>
+              <li><button type="button" data-feature="search" aria-pressed="false">Search</button></li>
+              <li><button type="button" data-feature="filters" aria-pressed="false">Filters</button></li>
+              <li><button type="button" data-feature="codes" aria-pressed="false">Codes, ready to copy</button></li>
+              <li><button type="button" data-feature="original" aria-pressed="false">Keep the original</button></li>
+              <li><button type="button" data-feature="summary" aria-pressed="false">Summaries <span class="pro">Pro</span></button></li>
+              <li><button type="button" data-feature="insights" aria-pressed="false">Insights <span class="pro">Pro</span></button></li>
+              <li><button type="button" data-feature="yours" aria-pressed="false">Make it yours <span class="pro">Pro</span></button></li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <main class="site-main">
-      <div class="ig-main-content">
-        <div id="hero" class="hero hero-centered">
-          <div class="container">
-            <div class="hero-content">
-              <img src="images/app-icon.png" alt="App Icon" class="hero-app-icon" />
-              <h1 class="hero-title">Never Miss Another Alert</h1>
-              <p class="hero-subtitle">Notified saves every chosen alert in one searchable list. Your iPhone keeps them, filters surface what matters.</p>
-              <div class="hero-cta">
-                <a href="https://apps.apple.com/app/id6820894292" class="cta-button cta-button-primary btn btn-primary">Get Started</a>
-              </div>
-            </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="how scene-paper">
+        <div class="how-inner">
+          <div class="section-head reveal">
+            <div class="eyebrow">Setup</div>
+            <h2 class="display display-md">Once, <span class="w">then forget it</span>.</h2>
+          </div>
+          <ol class="steps reveal">
+            <li><span class="step-n">1</span><strong>Add the shortcut</strong><span>A one‑time setup in the Shortcuts app.</span></li>
+            <li><span class="step-n">2</span><strong>Pick your apps</strong><span>Only the apps you add are saved.</span></li>
+            <li><span class="step-n">3</span><strong>Clear freely</strong><span>From now on, every notification lands in Notified.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="pricing scene-paper">
+        <div class="pricing-inner">
+          <div class="section-head reveal">
+            <div class="eyebrow">Pricing</div>
+            <h2 class="display display-md">Free to <span class="w">start</span>.</h2>
+            <p class="section-sub">Shown in euro. Your App Store shows local pricing.</p>
+          </div>
+          <ul class="tiers reveal">
+            <li>
+              <div class="tier-name"><span>Free</span><small>Your last 24 hours, with the list, search and filters.</small></div>
+              <div class="tier-price"><strong>0 €</strong><span>forever</span><a href="https://apps.apple.com/app/id6820894292" class="tier-get">Get</a></div>
+            </li>
+            <li>
+              <div class="tier-name"><span>Pro, monthly</span><small>Cancel anytime.</small></div>
+              <div class="tier-price"><strong>1,99 €</strong><span>/ month</span><a href="https://apps.apple.com/app/id6820894292" class="tier-get">Get</a></div>
+            </li>
+            <li class="is-highlight">
+              <div class="tier-name"><span>Pro, yearly <i class="dot" aria-hidden="true"></i></span><small>Save 58%.</small></div>
+              <div class="tier-price"><strong>9,99 €</strong><span>/ year</span><a href="https://apps.apple.com/app/id6820894292" class="tier-get">Get</a></div>
+            </li>
+            <li>
+              <div class="tier-name"><span>Pro, lifetime</span><small>Pay once. Yours forever.</small></div>
+              <div class="tier-price"><strong>24,99 €</strong><span>once</span><a href="https://apps.apple.com/app/id6820894292" class="tier-get">Get</a></div>
+            </li>
+          </ul>
+          <p class="pro-includes reveal">
+            Pro unlocks your full history beyond 24 hours, on‑device summaries, Insights, accent colors and backgrounds, codes protection and the Face ID lock, and removes the ad.
+          </p>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final scene-dark">
+        <div class="glow glow-final" aria-hidden="true"></div>
+        <h2 class="display reveal">Clear with <span class="w">confidence</span>.</h2>
+        <div class="reveal d1">
+          <a href="https://apps.apple.com/app/id6820894292" class="badge-link">
+            <img src="images/app-store-download-white.svg" alt="Download on the App Store" class="badge" />
+          </a>
+        </div>
+        <p class="final-note reveal d2">Free to download · Pro unlocks your full history · Made by one person</p>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="faq scene-paper">
+        <div class="faq-inner">
+          <div class="section-head reveal">
+            <div class="eyebrow">FAQ</div>
+            <h2 class="display display-md">Still <span class="w">wondering?</span></h2>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary>How does Notified save notifications?</summary>
+              <p>Notified adds a shortcut that runs when a notification from one of your chosen apps arrives. It passes a copy to Notified, which keeps it on your iPhone. You set this up once in the Shortcuts app.</p>
+            </details>
+            <details>
+              <summary>Does it save notifications from before I set it up?</summary>
+              <p>No. iPhone doesn't keep a history, so Notified can only save notifications that arrive after the shortcut is on. From then on, everything from your chosen apps is kept.</p>
+            </details>
+            <details>
+              <summary>Which apps are saved?</summary>
+              <p>Only the apps you add to the automation. You can add more at any time in the Shortcuts app, and apps without any saved notifications don't show up in Notified.</p>
+            </details>
+            <details>
+              <summary>Does Notified send my notifications anywhere?</summary>
+              <p>No. Notifications are saved and sorted on your iPhone. Summaries are created on‑device with Apple Intelligence on supported devices, and sign‑in codes never go into a summary. See the <a href="legal/privacy-policy/">privacy policy</a> for the full picture.</p>
+            </details>
+            <details>
+              <summary>What's free and what's Pro?</summary>
+              <p>Free keeps your last 24 hours with the Lock Screen‑style list, search and filters. Pro adds your full history beyond 24 hours, on‑device summaries, Insights, accent colors and backgrounds, codes protection and the Face ID lock, and removes the ad. Pro is available monthly, yearly or as a one‑time lifetime purchase.</p>
+            </details>
+            <details>
+              <summary>Which iPhones are supported?</summary>
+              <p>Notified runs on iPhone with iOS 26 or later. Summaries need a device that supports Apple Intelligence; on other devices the Today card shows a plain count of what came in.</p>
+            </details>
           </div>
         </div>
-        <div id="screenshots" class="screenshots-section screenshots-carousel">
-          <div class="container">
-            <div class="section-header">
-              <h2>See It in Action</h2>
-              <p class="section-description">Beautiful screenshots showcasing your app's best features.</p>
-            </div>
-            <div class="screenshots-container">
-              <div class="screenshots-scroll"></div>
-            </div>
-          </div>
-        </div>
-        <div id="highlights" class="highlights-section highlights-grid-multiple-of-three">
-          <div class="container">
-            <div class="section-header">
-              <h2>Why Choose Us</h2>
-              <p class="section-description">The key reasons users love our product.</p>
-            </div>
-            <div class="highlights-grid">
-              <div class="highlight-card">
-                <h4 class="highlight-title">Never Lose Alerts</h4>
-                <p class="highlight-description">Notified saves every chosen notification so you can clear your Lock Screen without worry.</p>
-              </div>
-              <div class="highlight-card">
-                <h4 class="highlight-title">Smart One List</h4>
-                <p class="highlight-description">Search and filters sort codes, messages and updates in a Lock Screen style view.</p>
-              </div>
-              <div class="highlight-card">
-                <h4 class="highlight-title">Quick Summaries</h4>
-                <p class="highlight-description">Brief recaps show what arrived, each line one tap from the original notification.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="features" class="features-section features-grid-layout features-grid-multiple-of-three">
-          <div class="container">
-            <div class="section-header">
-              <h2>Powerful Features</h2>
-              <p class="section-description">Everything you need to get things done.</p>
-            </div>
-            <div class="features-grid">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="feature-icon-image bi-shield-check"></i>
-                </div>
-                <h4 class="feature-title">Never Lose Alerts</h4>
-                <p class="feature-description">Keep every chosen notification so you can clear your Lock Screen without worry.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="feature-icon-image bi-list-check"></i>
-                </div>
-                <h4 class="feature-title">Unified List View</h4>
-                <p class="feature-description">See everything in one familiar list that matches your Lock Screen layout.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="feature-icon-image bi-search"></i>
-                </div>
-                <h4 class="feature-title">Instant Search</h4>
-                <p class="feature-description">Find any message or code in seconds with fast search across all alerts.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="feature-icon-image bi-filter"></i>
-                </div>
-                <h4 class="feature-title">Smart Filters</h4>
-                <p class="feature-description">Sort codes, messages, updates and promotions so key items stay visible.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="feature-icon-image bi-star-fill"></i>
-                </div>
-                <h4 class="feature-title">Quick Summaries</h4>
-                <p class="feature-description">Get a short recap after time away, each line one tap from the original.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="feature-icon-image bi-lock"></i>
-                </div>
-                <h4 class="feature-title">Private Storage</h4>
-                <p class="feature-description">Save alerts only on your iPhone after a simple one-time setup.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="faq" class="faq-section">
-          <div class="container">
-            <div class="section-header">
-              <h2>Frequently Asked Questions</h2>
-              <p class="section-description">Find answers to common questions.</p>
-            </div>
-            <div class="faq-content faq-accordion-layout">
-              <div id="accordion2QHsW" class="faq-accordion accordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header"><button type="button" class="accordion-button collapsed btn" data-bs-toggle="collapse" data-bs-target="#accordion2QHsW-itemeL6x4" aria-expanded="false" aria-controls="accordion2QHsW-itemeL6x4">How does Notified save notifications?</button></h2>
-                  <div id="accordion2QHsW-itemeL6x4" class="accordion-collapse collapse" data-bs-parent="#accordion2QHsW">
-                    <div class="accordion-body">
-                      <p class="faq-answer">Notified keeps a copy of every alert from chosen apps once you add its shortcut in the Shortcuts app. This one-time setup lets notifications stay on your iPhone safely.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header"><button type="button" class="accordion-button collapsed btn" data-bs-toggle="collapse" data-bs-target="#accordion2QHsW-itemTGR1o" aria-expanded="false" aria-controls="accordion2QHsW-itemTGR1o">Where do saved notifications appear?</button></h2>
-                  <div id="accordion2QHsW-itemTGR1o" class="accordion-collapse collapse" data-bs-parent="#accordion2QHsW">
-                    <div class="accordion-body">
-                      <p class="faq-answer">Everything lands in one list that matches your Lock Screen. You can search any item in seconds and use filters for codes, messages, updates, and promotions to find what matters.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header"><button type="button" class="accordion-button collapsed btn" data-bs-toggle="collapse" data-bs-target="#accordion2QHsW-itemqd1kb" aria-expanded="false" aria-controls="accordion2QHsW-itemqd1kb">Can I review notifications later?</button></h2>
-                  <div id="accordion2QHsW-itemqd1kb" class="accordion-collapse collapse" data-bs-parent="#accordion2QHsW">
-                    <div class="accordion-body">
-                      <p class="faq-answer">Yes. A short summary shows what arrived while you were away. Each line is one tap from the original notification, so important details are never buried under promotions.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header"><button type="button" class="accordion-button collapsed btn" data-bs-toggle="collapse" data-bs-target="#accordion2QHsW-itemNvVhN" aria-expanded="false" aria-controls="accordion2QHsW-itemNvVhN">Does Notified send data off my device?</button></h2>
-                  <div id="accordion2QHsW-itemNvVhN" class="accordion-collapse collapse" data-bs-parent="#accordion2QHsW">
-                    <div class="accordion-body">
-                      <p class="faq-answer">No. Your notifications remain on your iPhone. The app stores copies locally so you can clear your Lock Screen without worrying about losing anything important.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header"><button type="button" class="accordion-button collapsed btn" data-bs-toggle="collapse" data-bs-target="#accordion2QHsW-itemKVUoP" aria-expanded="false" aria-controls="accordion2QHsW-itemKVUoP">What setup is required?</button></h2>
-                  <div id="accordion2QHsW-itemKVUoP" class="accordion-collapse collapse" data-bs-parent="#accordion2QHsW">
-                    <div class="accordion-body">
-                      <p class="faq-answer">You add a one-time shortcut in the Shortcuts app. After that, Notified starts saving alerts from the apps you choose, with no further configuration needed.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="download" class="download-section">
-          <div class="container">
-            <div class="download-content">
-              <h2>Save Every Notification Now</h2>
-              <p class="download-description">Don’t lose alerts - grab Notified today.</p>
-              <div class="store-badges">
-                <a href="https://apps.apple.com/app/id6820894292" class="store-badge-link"><img src="images/app-store-download-black.svg" alt="Download on the App Store" class="store-badge store-badge-light-mode" /><img src="images/app-store-download-white.svg" alt="Download on the App Store" class="store-badge store-badge-dark-mode" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
-    <div class="site-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <p class="footer-tagline">Find any alert, any time.</p>
-          </div>
+
+    <footer class="footer scene-dark">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="./" class="nav-brand"><img src="images/app-icon-512.png" alt="" width="28" height="28" /><span>Notified</span></a>
+          <p>Find any alert, any time. A notification history for the apps you choose, kept on your iPhone.</p>
+          <small>© 2026 Christian Skorobogatow. All rights reserved.</small>
         </div>
-        <div class="footer-copyright">
-          <p>Copyright 2026 Notified: Notification History. All rights reserved.</p>
-          <a href="https://www.kickstart.tools" class="footer-kickstart-link">Built with Kickstart</a>
+        <div class="footer-col">
+          <h3>App</h3>
+          <a href="https://apps.apple.com/app/id6820894292">Download on the App Store</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Terms of use</a>
+          <a href="legal/privacy-policy/">Privacy policy</a>
         </div>
       </div>
-    </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/ignite-core.js"></script>
+    </footer>
+
+    <script src="js/landing.js" defer></script>
   </body>
 </html>
