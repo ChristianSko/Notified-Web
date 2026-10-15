@@ -15,7 +15,6 @@
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --gutter: clamp(20px, 5vw, 48px);
-  --phone-radius: 15%;
 }
 
 * { box-sizing: border-box; }
@@ -131,45 +130,18 @@ ul, ol { padding: 0; list-style: none; }
 .phone-hero-main { width: 50%; max-width: 320px; }
 .phone-hero-side { width: 40%; max-width: 250px; margin-bottom: -4%; }
 
-/* ---------- Phone frame ---------- */
-.phone {
-  position: relative;
-  border-radius: var(--phone-radius) / calc(var(--phone-radius) * 0.46);
-  background: #0b0b0c;
-  padding: 3.2%;
-  box-shadow:
-    0 0 0 1.5px rgba(255,255,255,0.1),
-    inset 0 0 0 1px rgba(0,0,0,0.6),
-    0 40px 90px rgba(0,0,0,0.55);
+/* ---------- Phone (bezel baked into the image) ---------- */
+.phone { position: relative; margin: 0; }
+.phone-screen { position: relative; aspect-ratio: 1350 / 2760; }
+.phone-screen img {
+  display: block; width: 100%; height: 100%; object-fit: contain;
+  filter: drop-shadow(0 40px 60px rgba(0,0,0,0.55));
 }
-.scene-light .phone, .scene-paper .phone { box-shadow: 0 0 0 1.5px rgba(0,0,0,0.12), 0 30px 70px rgba(0,0,0,0.22); }
-.phone::after {
-  /* Dynamic Island */
-  content: ""; position: absolute; left: 50%; top: 5.2%; width: 26%; height: 3.2%;
-  transform: translateX(-50%); background: #000; border-radius: 999px; z-index: 2;
-}
-.phone-screen {
-  position: relative; overflow: hidden;
-  border-radius: calc(var(--phone-radius) * 0.8) / calc(var(--phone-radius) * 0.37);
-  aspect-ratio: 640 / 1392;
-  background: #111;
-}
-.phone-screen img { width: 100%; height: 100%; object-fit: cover; }
+.scene-light .phone-screen img, .scene-paper .phone-screen img { filter: drop-shadow(0 30px 50px rgba(0,0,0,0.28)); }
 .phone-xl { width: min(72%, 300px); margin: 0 auto; }
 .phone-lg { width: min(70%, 320px); }
 .phone-md { width: min(62%, 250px); margin: 0 auto; }
 
-/* Placeholder screens (swap for real screenshots later) */
-.placeholder {
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
-  background:
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.05) 0 10px, transparent 10px 22px),
-    linear-gradient(180deg, #1a1a1c, #0f0f10);
-  color: var(--ink-60); text-align: center; padding: 16px;
-}
-.placeholder::before { content: ""; position: absolute; inset: 10px; border: 1.5px dashed rgba(255,255,255,0.22); border-radius: inherit; }
-.ph-chip { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,0.12); color: var(--white); }
-.ph-text { font-size: clamp(13px, 1.4vw, 16px); font-weight: 500; line-height: 1.35; }
 
 /* ---------- Scenes ---------- */
 .scene-copy { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; }
